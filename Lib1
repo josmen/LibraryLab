@@ -5,6 +5,8 @@ class Library(object):
     DB_FILE = "booklist.csv"
     
     def __init__(self):
+        inventory = open(DB_FILE,"r")
+        
         
     def display_inventory(self):
         
