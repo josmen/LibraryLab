@@ -5,6 +5,11 @@ class Library(object):
     DB_FILE = "booklist.csv"
     
     def __init__(self):
+        self.books={}
+        inventory = oprn(DB_FILE, "r")
+        #something to split inventory"
+        for i in inventory:
+            inventory[0]=Book(inventory[1],inventory[2],inventory[3],inventory[4],inventory[5],inventory[0],inventory[6])
         
     def display_inventory(self):
         
